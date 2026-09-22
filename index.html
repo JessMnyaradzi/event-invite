@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jessica's Birthday</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- HERO / WELCOME SECTION -->
+    <section class="hero">
+
+        <p class="eyebrow">SAVE THE DATE</p>
+
+        <h1>YOU'RE INVITED!</h1>
+
+        <h2>Jessica's Birthday</h2>
+
+        <p>Join us as we celebrate another beautiful year.</p>
+
+        <div class="event-info">
+
+            <p>📅 Saturday, 17 October 2026</p>
+
+            <p>⏰ 14:00 - 20:00</p>
+
+            <p>📍 Ndola, Zambia</p>
+
+        </div>
+
+        <a href="#rsvp" class="rsvp-button">RSVP NOW</a>
+
+    </section>
+
+
+    <!-- ABOUT THE EVENT -->
+    <section class="about">
+
+        <p class="eyebrow">THE CELEBRATION</p>
+
+        <h2>Let's Celebrate!</h2>
+
+        <p>
+            Come join us for an unforgettable day filled with
+            good food, great music, laughter, games and beautiful memories.
+        </p>
+
+        <div class="event-details">
+
+            <div class="detail">
+
+                <h3>📅 Date</h3>
+
+                <p>Saturday, 17 October 2026</p>
+
+            </div>
+
+            <div class="detail">
+
+                <h3>⏰ Time</h3>
+
+                <p>14:00 - 20:00</p>
+
+            </div>
+
+            <div class="detail">
+
+                <h3>📍 Location</h3>
+
+                <p>Ndola, Zambia</p>
+
+            </div>
+
+            <div class="detail">
+
+                <h3>👗 Dress Code</h3>
+
+                <p>Sylish and comfortable!</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- COUNTDOWN SECTION -->
+    <section class="countdown">
+
+        <p class="eyebrow">COUNTING DOWN</p>
+
+        <h2>The Party Starts In...</h2>
+
+        <div class="countdown-container">
+
+            <div class="countdown-box">
+
+                <span id="days">00</span>
+
+                <p>Days</p>
+
+            </div>
+
+            <div class="countdown-box">
+
+                <span id="hours">00</span>
+
+                <p>Hours</p>
+
+            </div>
+
+            <div class="countdown-box">
+
+                <span id="minutes">00</span>
+
+                <p>Minutes</p>
+
+            </div>
+
+            <div class="countdown-box">
+
+                <span id="seconds">00</span>
+
+                <p>Seconds</p>
+
+            </div>
+
+        </div>
+
+        <p id="countdown-message"></p>
+
+    </section>
+
+
+    <!-- LOCATION + MAP SECTION -->
+
+<section class="location">
+
+    <p class="eyebrow">FIND US</p>
+
+    <h2>Where We're Celebrating</h2>
+
+    <h3>Venue Name</h3>
+
+    <p>123 Kwacha Street, Premium Plaza,Ndola, Zambia</p>
+
+    <iframe
+    src="https://www.google.com/maps?q=Ndola,Zambia&output=embed"
+    width="600"
+    height="450"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy">
+</iframe>
+<a href="https://www.google.com/maps/dir/?api=1&destination=Ndola,Zambia"
+   target="_blank"
+   class="directions-button">
+    GET DIRECTIONS
+</a>
+
+</section>
+<!-- RSVP SECTION -->
+<section class="rsvp" id="rsvp">
+
+    <p class="eyebrow">RSVP</p>
+
+    <h2>Will You Join Us?</h2>
+
+    <p>Please fill in the form below to let us know if you'll be attending.</p>
+
+    <form id="rsvp-form">
+        <label for="name">Your Name</label>
+
+<input
+    type="text"
+    id="name"
+    name="name"
+    placeholder="Enter your name"
+    required
+>
+<!--Attendance -->
+<p>Will you attend?</p>
+
+<label>
+    <input
+        type="radio"
+        name="attendance"
+        value="yes"
+        required
+    >
+    Yes, I'll be there!
+</label>
+
+<!--Number of Guests goes here-->
+<label>
+    <input
+        type="radio"
+        name="attendance"
+        value="no"
+    >
+    No, I can't make it.
+</label>
+<label for="guests">Number of Guests</label>
+
+<input
+    type="number"
+    id="guests"
+    name="guests"
+    min="1"
+    max="10"
+    value="1"
+    required
+>
+<label for="message">Message</label>
+
+<textarea
+    id="message"
+    name="message"
+    placeholder="Leave a message..."
+    rows="5">
+</textarea>
+<button type="submit">SUBMIT RSVP</button>
+
+</form>
+
+<p id="rsvp-message"></p>
+
+</section>
+
+<!-- DRESS CODE SECTION -->
+<section class="dress-code">
+
+    <p class="eyebrow">DRESS CODE</p>
+
+    <h2>Come Dressed to Impress</h2>
+
+    <p>
+        Our dress code is smart casual.
+        Come comfortable, stylish and ready to celebrate!
+    </p>
+
+    <div class="dress-code-details">
+
+        <div class="dress-detail">
+
+            <h3>👗 Style</h3>
+
+            <p>Stylish and comfortable!</p>
+
+        </div>
+
+        <div class="dress-detail">
+
+            <h3>🎨 Theme Colours</h3>
+
+            <p>Neutral colors</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- EVENT THEME / THE VIBE SECTION -->
+<section class="vibe">
+
+    <p class="eyebrow">THE VIBE</p>
+
+    <h2>What to Expect</h2>
+
+    <p>
+        Come ready for good music, delicious food, fun activities
+        and plenty of beautiful memories!
+    </p>
+
+    <div class="vibe-details">
+
+        <div class="vibe-item">
+
+            <h3>🎵 Music</h3>
+
+            <p>Good music and your favourite songs.</p>
+
+        </div>
+
+        <div class="vibe-item">
+
+            <h3>🍕 Food</h3>
+
+            <p>Delicious food and refreshing drinks.</p>
+
+        </div>
+
+        <div class="vibe-item">
+
+            <h3>🎮 Games</h3>
+
+            <p>Fun games and activities for everyone.</p>
+
+        </div>
+
+        <div class="vibe-item">
+
+            <h3>📸 Photos</h3>
+
+            <p>Capture beautiful moments and memories.</p>
+
+        </div>
+
+        <div class="vibe-item">
+
+            <h3>💃 Dancing</h3>
+
+            <p>Dance, laugh and enjoy the celebration!</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PHOTO / GALLERY SECTION -->
+<section class="gallery">
+
+    <p class="eyebrow">MEMORIES</p>
+
+    <h2>Moments Worth Remembering</h2>
+
+    <p>
+        A few pictures to capture the spirit of the celebration.
+    </p>
+
+    <div class="gallery-grid">
+
+        <img
+            src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf"
+            alt="People celebrating together"
+        >
+
+        <img
+            src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d"
+            alt="Birthday celebration"
+        >
+
+        <img
+            src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3"
+            alt="Celebration decorations"
+        >
+
+        <img
+            src="https://images.unsplash.com/photo-1513151233558-d860c5398176"
+            alt="Party decorations"
+        >
+
+    </div>
+
+</section>
+
+<!-- WISHLIST SECTION -->
+<section class="wishlist">
+
+    <p class="eyebrow">A LITTLE SOMETHING</p>
+
+    <h2>Your Presence Is the Best Gift</h2>
+
+    <p>
+        Having you celebrate this special day with me is already a gift.
+        But if you would like to bring something, here are a few ideas!
+    </p>
+
+    <div class="wishlist-items">
+
+        <div class="wishlist-item">
+
+            <h3>🎁 Gift Ideas</h3>
+
+            <p>Perfume, books, beauty items or something thoughtful.</p>
+
+        </div>
+
+        <div class="wishlist-item">
+
+            <h3>💐 Something Sweet</h3>
+
+            <p>Flowers, chocolates or a beautiful handwritten card.</p>
+
+        </div>
+
+        <div class="wishlist-item">
+
+            <h3>💳 Gift Card</h3>
+
+            <p>A gift card is always welcome if you're unsure what to choose.</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact">
+
+    <p class="eyebrow">GET IN TOUCH</p>
+
+    <h2>Have Any Questions?</h2>
+
+    <p>
+        If you have any questions about the event,
+        feel free to get in touch.
+    </p>
+
+    <div class="contact-details">
+
+        <div class="contact-item">
+
+            <h3>👤 Contact Person</h3>
+
+            <p>Jessica</p>
+
+        </div>
+
+        <div class="contact-item">
+
+            <h3>📞 Phone</h3>
+
+            <p>+260 970 348 384</p>
+
+        </div>
+
+        <div class="contact-item">
+
+            <h3>📱 Social Media</h3>
+
+            <p>
+                Instagram: @jessica_mnyaradzi
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>© 2026 Jessica's Birthday Celebration</p>
+
+    <p>Made with love 🎀</p>
+
+</footer>
+
+    <!-- JAVASCRIPT CONNECTION -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

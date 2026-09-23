@@ -127,3 +127,28 @@ rsvpForm.addEventListener("submit", function(event) {
     rsvpForm.reset();
 
 });
+
+// STEP-BY-STEP SECTIONS
+
+
+const sections = document.querySelectorAll(".page-section");
+
+function showSection(sectionNumber) {
+
+    sections.forEach(function(section, index) {
+
+        if (index === sectionNumber) {
+
+            section.style.display = "block";
+
+        } else {
+
+            section.style.display = "none";
+
+        }
+
+    });
+
+}
+
+showSection(0);

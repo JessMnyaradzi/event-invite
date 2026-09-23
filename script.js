@@ -139,7 +139,7 @@ function showSection(sectionNumber) {
 
         if (index === sectionNumber) {
 
-            section.style.display = "block";
+            section.style.display = "flex";
 
         } else {
 

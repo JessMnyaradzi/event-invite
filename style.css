@@ -853,3 +853,7 @@ footer p {
     background-color: #a83d67;
     transform: translateY(-2px);
 }
+
+.page-section {
+    display: none;
+}

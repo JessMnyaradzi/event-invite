@@ -110,6 +110,18 @@ rsvpForm.addEventListener("submit", function(event) {
     const selectedAttendance =
         document.querySelector('input[name="attendance"]:checked');
 
+    const formData = {
+        name: document.getElementById("name").value,
+        attendance: selectedAttendance.value,
+        guests: document.getElementById("guests").value,
+        message: document.getElementById("message").value
+    };
+
+    fetch("https://script.google.com/macros/s/AKfycbwSFcoT9KLJ_924UofZwF20i3tknjkaJZfOBn6Utj2bZ8z1u_mu0ifg9iMA8cVlC_tH/exec", {
+        method: "POST",
+        mode: "no-cors",
+        body: JSON.stringify(formData)
+    });
 
     if (selectedAttendance.value === "yes") {
 

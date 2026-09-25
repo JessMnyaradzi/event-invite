@@ -1,5 +1,5 @@
 // EVENT DATE AND TIME
-const eventDate = new Date("October 17, 2026 14:00:00").getTime();
+const eventDate = new Date("January 13, 2027 14:00:00").getTime();
 
 
 // COUNTDOWN FUNCTION
@@ -116,15 +116,21 @@ rsvpForm.addEventListener("submit", function(event) {
         rsvpMessage.textContent =
             "🎉 Thank you! Your RSVP has been received. We can't wait to celebrate with you!";
 
+        rsvpForm.reset();
+
     } else {
 
         rsvpMessage.textContent =
-            "💕 Thank you for letting us know.";
+            "💕 Thank you for letting us know. We hope to celebrate with you another time!";
+
+        rsvpForm.reset();
+
+        setTimeout(function() {
+            rsvpMessage.textContent = "";
+            showSection(0);
+        }, 2500);
 
     }
-
-
-    rsvpForm.reset();
 
 });
 
